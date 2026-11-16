@@ -1,0 +1,16 @@
+/* 
+  InfoPlist.strings
+
+ Created by MGAbouarab®
+  
+*/
+
+
+"CFBundleDisplayName" = "استيراد";
+"NSCameraUsageDescription" = "يحتاج تطبيق استيراد إلى الوصول إلى الكاميرا لتتمكن من التقاط صورة لطلبك وإرفاقها بطلبك.";
+"NSLocationAlwaysAndWhenInUseUsageDescription" = "يستخدم تطبيق استيراد موقعك لعرض أقرب المتاجر والمواقع إليك وتوفير تفاصيل توصيل دقيقة لطلباتك.";
+"NSLocationAlwaysUsageDescription" = "يستخدم تطبيق استيراد موقعك لعرض أقرب المتاجر والمواقع إليك وتوفير تفاصيل توصيل دقيقة لطلباتك.";
+"NSLocationWhenInUseUsageDescription" = "يستخدم تطبيق استيراد موقعك لعرض أقرب المتاجر والمواقع إليك وتوفير تفاصيل توصيل دقيقة لطلباتك.";
+"NSPhotoLibraryUsageDescription" = "يحتاج تطبيق استيراد إلى الوصول إلى مكتبة الصور لتتمكن من اختيار صورة لطلبك وإرفاقها بطلبك.";
+"NSMicrophoneUsageDescription" = "يحتاج تطبيق استيراد إلى الوصول إلى الميكروفون لتتمكن من تسجيل وإرسال الرسائل الصوتية في المحادثة.";
+

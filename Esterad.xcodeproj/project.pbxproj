@@ -1,0 +1,584 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 77;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		6B31B4DD2E9F8B2D001BA81F /* FirebaseAnalytics in Frameworks */ = {isa = PBXBuildFile; productRef = 6B31B4DC2E9F8B2D001BA81F /* FirebaseAnalytics */; };
+		6B31B4E32E9F8B2D001BA81F /* FirebaseAppCheck in Frameworks */ = {isa = PBXBuildFile; productRef = 6B31B4E22E9F8B2D001BA81F /* FirebaseAppCheck */; };
+		6B31B4E72E9F8B2D001BA81F /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = 6B31B4E62E9F8B2D001BA81F /* FirebaseAuth */; };
+		6B31B4EB2E9F8B2D001BA81F /* FirebaseCore in Frameworks */ = {isa = PBXBuildFile; productRef = 6B31B4EA2E9F8B2D001BA81F /* FirebaseCore */; };
+		6B31B4EF2E9F8B2D001BA81F /* FirebaseDatabase in Frameworks */ = {isa = PBXBuildFile; productRef = 6B31B4EE2E9F8B2D001BA81F /* FirebaseDatabase */; };
+		6B31B4F12E9F8B2D001BA81F /* FirebaseFirestore in Frameworks */ = {isa = PBXBuildFile; productRef = 6B31B4F02E9F8B2D001BA81F /* FirebaseFirestore */; };
+		6B31B4F32E9F8B2D001BA81F /* FirebaseFunctions in Frameworks */ = {isa = PBXBuildFile; productRef = 6B31B4F22E9F8B2D001BA81F /* FirebaseFunctions */; };
+		6B31B4F52E9F8B2D001BA81F /* FirebaseInAppMessaging-Beta in Frameworks */ = {isa = PBXBuildFile; productRef = 6B31B4F42E9F8B2D001BA81F /* FirebaseInAppMessaging-Beta */; };
+		6B31B4F92E9F8B2D001BA81F /* FirebaseMLModelDownloader in Frameworks */ = {isa = PBXBuildFile; productRef = 6B31B4F82E9F8B2D001BA81F /* FirebaseMLModelDownloader */; };
+		6B31B4FB2E9F8B2D001BA81F /* FirebaseMessaging in Frameworks */ = {isa = PBXBuildFile; productRef = 6B31B4FA2E9F8B2D001BA81F /* FirebaseMessaging */; };
+		6B31B4FD2E9F8B2D001BA81F /* FirebasePerformance in Frameworks */ = {isa = PBXBuildFile; productRef = 6B31B4FC2E9F8B2D001BA81F /* FirebasePerformance */; };
+		6B31B5012E9F8B2D001BA81F /* FirebaseStorage in Frameworks */ = {isa = PBXBuildFile; productRef = 6B31B5002E9F8B2D001BA81F /* FirebaseStorage */; };
+		6B44670A2EE708750063A0FA /* SocketIO in Frameworks */ = {isa = PBXBuildFile; productRef = 6B4467092EE708750063A0FA /* SocketIO */; };
+		6B72CF5B2ECB27A200D3E809 /* Cosmos in Frameworks */ = {isa = PBXBuildFile; productRef = 6B72CF5A2ECB27A200D3E809 /* Cosmos */; };
+		6B7FCC332E9D12DC0080B90D /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = 6B7FCC322E9D12DC0080B90D /* Kingfisher */; };
+		6B7FCC362E9D12F80080B90D /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = 6B7FCC352E9D12F80080B90D /* Alamofire */; };
+		6B7FCC392E9D13420080B90D /* Lottie in Frameworks */ = {isa = PBXBuildFile; productRef = 6B7FCC382E9D13420080B90D /* Lottie */; };
+		6BB165EF2E9F88D100A00B87 /* GoogleMaps in Frameworks */ = {isa = PBXBuildFile; productRef = 6BB165EE2E9F88D100A00B87 /* GoogleMaps */; };
+		6BB165F22E9F88F500A00B87 /* IQKeyboardManagerSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 6BB165F12E9F88F500A00B87 /* IQKeyboardManagerSwift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		6B7FC6FF2E9CFFD90080B90D /* Esterad.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Esterad.app; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
+		6B7FC7112E9CFFDA0080B90D /* Exceptions for "Esterad" folder in "Esterad" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				Info.plist,
+			);
+			target = 6B7FC6FE2E9CFFD90080B90D /* Esterad */;
+		};
+/* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
+
+/* Begin PBXFileSystemSynchronizedRootGroup section */
+		6B7FC7012E9CFFD90080B90D /* Esterad */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+				6B7FC7112E9CFFDA0080B90D /* Exceptions for "Esterad" folder in "Esterad" target */,
+			);
+			path = Esterad;
+			sourceTree = "<group>";
+		};
+/* End PBXFileSystemSynchronizedRootGroup section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		6B7FC6FC2E9CFFD90080B90D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6B31B4DD2E9F8B2D001BA81F /* FirebaseAnalytics in Frameworks */,
+				6B44670A2EE708750063A0FA /* SocketIO in Frameworks */,
+				6BB165F22E9F88F500A00B87 /* IQKeyboardManagerSwift in Frameworks */,
+				6B31B5012E9F8B2D001BA81F /* FirebaseStorage in Frameworks */,
+				6B31B4F32E9F8B2D001BA81F /* FirebaseFunctions in Frameworks */,
+				6BB165EF2E9F88D100A00B87 /* GoogleMaps in Frameworks */,
+				6B31B4F12E9F8B2D001BA81F /* FirebaseFirestore in Frameworks */,
+				6B31B4F92E9F8B2D001BA81F /* FirebaseMLModelDownloader in Frameworks */,
+				6B31B4EB2E9F8B2D001BA81F /* FirebaseCore in Frameworks */,
+				6B31B4EF2E9F8B2D001BA81F /* FirebaseDatabase in Frameworks */,
+				6B7FCC332E9D12DC0080B90D /* Kingfisher in Frameworks */,
+				6B7FCC362E9D12F80080B90D /* Alamofire in Frameworks */,
+				6B31B4F52E9F8B2D001BA81F /* FirebaseInAppMessaging-Beta in Frameworks */,
+				6B72CF5B2ECB27A200D3E809 /* Cosmos in Frameworks */,
+				6B7FCC392E9D13420080B90D /* Lottie in Frameworks */,
+				6B31B4E72E9F8B2D001BA81F /* FirebaseAuth in Frameworks */,
+				6B31B4E32E9F8B2D001BA81F /* FirebaseAppCheck in Frameworks */,
+				6B31B4FD2E9F8B2D001BA81F /* FirebasePerformance in Frameworks */,
+				6B31B4FB2E9F8B2D001BA81F /* FirebaseMessaging in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		6B7FC6F62E9CFFD90080B90D = {
+			isa = PBXGroup;
+			children = (
+				6B7FC7012E9CFFD90080B90D /* Esterad */,
+				6B7FC7002E9CFFD90080B90D /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		6B7FC7002E9CFFD90080B90D /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				6B7FC6FF2E9CFFD90080B90D /* Esterad.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		6B7FC6FE2E9CFFD90080B90D /* Esterad */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6B7FC7122E9CFFDA0080B90D /* Build configuration list for PBXNativeTarget "Esterad" */;
+			buildPhases = (
+				6B7FC6FB2E9CFFD90080B90D /* Sources */,
+				6B7FC6FC2E9CFFD90080B90D /* Frameworks */,
+				6B7FC6FD2E9CFFD90080B90D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			fileSystemSynchronizedGroups = (
+				6B7FC7012E9CFFD90080B90D /* Esterad */,
+			);
+			name = Esterad;
+			packageProductDependencies = (
+				6B7FCC322E9D12DC0080B90D /* Kingfisher */,
+				6B7FCC352E9D12F80080B90D /* Alamofire */,
+				6B7FCC382E9D13420080B90D /* Lottie */,
+				6BB165EE2E9F88D100A00B87 /* GoogleMaps */,
+				6BB165F12E9F88F500A00B87 /* IQKeyboardManagerSwift */,
+				6B31B4DC2E9F8B2D001BA81F /* FirebaseAnalytics */,
+				6B31B4E22E9F8B2D001BA81F /* FirebaseAppCheck */,
+				6B31B4E62E9F8B2D001BA81F /* FirebaseAuth */,
+				6B31B4EA2E9F8B2D001BA81F /* FirebaseCore */,
+				6B31B4EE2E9F8B2D001BA81F /* FirebaseDatabase */,
+				6B31B4F02E9F8B2D001BA81F /* FirebaseFirestore */,
+				6B31B4F22E9F8B2D001BA81F /* FirebaseFunctions */,
+				6B31B4F42E9F8B2D001BA81F /* FirebaseInAppMessaging-Beta */,
+				6B31B4F82E9F8B2D001BA81F /* FirebaseMLModelDownloader */,
+				6B31B4FA2E9F8B2D001BA81F /* FirebaseMessaging */,
+				6B31B4FC2E9F8B2D001BA81F /* FirebasePerformance */,
+				6B31B5002E9F8B2D001BA81F /* FirebaseStorage */,
+				6B72CF5A2ECB27A200D3E809 /* Cosmos */,
+				6B4467092EE708750063A0FA /* SocketIO */,
+			);
+			productName = Esterad;
+			productReference = 6B7FC6FF2E9CFFD90080B90D /* Esterad.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		6B7FC6F72E9CFFD90080B90D /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1630;
+				LastUpgradeCheck = 1630;
+				TargetAttributes = {
+					6B7FC6FE2E9CFFD90080B90D = {
+						CreatedOnToolsVersion = 16.3;
+					};
+				};
+			};
+			buildConfigurationList = 6B7FC6FA2E9CFFD90080B90D /* Build configuration list for PBXProject "Esterad" */;
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+				ar,
+			);
+			mainGroup = 6B7FC6F62E9CFFD90080B90D;
+			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+				6B7FCC312E9D12DC0080B90D /* XCRemoteSwiftPackageReference "Kingfisher" */,
+				6B7FCC342E9D12F80080B90D /* XCRemoteSwiftPackageReference "Alamofire" */,
+				6B7FCC372E9D13420080B90D /* XCRemoteSwiftPackageReference "lottie-spm" */,
+				6BB165ED2E9F88D100A00B87 /* XCRemoteSwiftPackageReference "ios-maps-sdk" */,
+				6BB165F02E9F88F500A00B87 /* XCRemoteSwiftPackageReference "IQKeyboardManager" */,
+				6B31B4D92E9F8B2D001BA81F /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
+				6B72CF592ECB27A200D3E809 /* XCRemoteSwiftPackageReference "Cosmos" */,
+				6B4467082EE708750063A0FA /* XCRemoteSwiftPackageReference "socket" */,
+			);
+			preferredProjectObjectVersion = 77;
+			productRefGroup = 6B7FC7002E9CFFD90080B90D /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				6B7FC6FE2E9CFFD90080B90D /* Esterad */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		6B7FC6FD2E9CFFD90080B90D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		6B7FC6FB2E9CFFD90080B90D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		6B7FC7132E9CFFDA0080B90D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = Esterad/Esterad.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 8K7XH694L9;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Esterad/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.6;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.3;
+				PRODUCT_BUNDLE_IDENTIFIER = com.Abdullah.Esterad;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		6B7FC7142E9CFFDA0080B90D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = Esterad/Esterad.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 8K7XH694L9;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Esterad/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.6;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.3;
+				PRODUCT_BUNDLE_IDENTIFIER = com.Abdullah.Esterad;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+		6B7FC7152E9CFFDA0080B90D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEVELOPMENT_TEAM = ZUMG9R88LL;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.4;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		6B7FC7162E9CFFDA0080B90D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEVELOPMENT_TEAM = ZUMG9R88LL;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.4;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		6B7FC6FA2E9CFFD90080B90D /* Build configuration list for PBXProject "Esterad" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6B7FC7152E9CFFDA0080B90D /* Debug */,
+				6B7FC7162E9CFFDA0080B90D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6B7FC7122E9CFFDA0080B90D /* Build configuration list for PBXNativeTarget "Esterad" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6B7FC7132E9CFFDA0080B90D /* Debug */,
+				6B7FC7142E9CFFDA0080B90D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		6B31B4D92E9F8B2D001BA81F /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/firebase/firebase-ios-sdk.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 12.4.0;
+			};
+		};
+		6B4467082EE708750063A0FA /* XCRemoteSwiftPackageReference "socket" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/socketio/socket.io-client-swift";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
+		6B72CF592ECB27A200D3E809 /* XCRemoteSwiftPackageReference "Cosmos" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/evgenyneu/Cosmos.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 25.0.1;
+			};
+		};
+		6B7FCC312E9D12DC0080B90D /* XCRemoteSwiftPackageReference "Kingfisher" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/onevcat/Kingfisher.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 8.6.0;
+			};
+		};
+		6B7FCC342E9D12F80080B90D /* XCRemoteSwiftPackageReference "Alamofire" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Alamofire/Alamofire.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.10.2;
+			};
+		};
+		6B7FCC372E9D13420080B90D /* XCRemoteSwiftPackageReference "lottie-spm" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/airbnb/lottie-spm.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 4.5.2;
+			};
+		};
+		6BB165ED2E9F88D100A00B87 /* XCRemoteSwiftPackageReference "ios-maps-sdk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/googlemaps/ios-maps-sdk";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 10.4.0;
+			};
+		};
+		6BB165F02E9F88F500A00B87 /* XCRemoteSwiftPackageReference "IQKeyboardManager" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/hackiftekhar/IQKeyboardManager.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 8.0.1;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		6B31B4DC2E9F8B2D001BA81F /* FirebaseAnalytics */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 6B31B4D92E9F8B2D001BA81F /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAnalytics;
+		};
+		6B31B4E22E9F8B2D001BA81F /* FirebaseAppCheck */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 6B31B4D92E9F8B2D001BA81F /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAppCheck;
+		};
+		6B31B4E62E9F8B2D001BA81F /* FirebaseAuth */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 6B31B4D92E9F8B2D001BA81F /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAuth;
+		};
+		6B31B4EA2E9F8B2D001BA81F /* FirebaseCore */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 6B31B4D92E9F8B2D001BA81F /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseCore;
+		};
+		6B31B4EE2E9F8B2D001BA81F /* FirebaseDatabase */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 6B31B4D92E9F8B2D001BA81F /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseDatabase;
+		};
+		6B31B4F02E9F8B2D001BA81F /* FirebaseFirestore */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 6B31B4D92E9F8B2D001BA81F /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseFirestore;
+		};
+		6B31B4F22E9F8B2D001BA81F /* FirebaseFunctions */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 6B31B4D92E9F8B2D001BA81F /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseFunctions;
+		};
+		6B31B4F42E9F8B2D001BA81F /* FirebaseInAppMessaging-Beta */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 6B31B4D92E9F8B2D001BA81F /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = "FirebaseInAppMessaging-Beta";
+		};
+		6B31B4F82E9F8B2D001BA81F /* FirebaseMLModelDownloader */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 6B31B4D92E9F8B2D001BA81F /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseMLModelDownloader;
+		};
+		6B31B4FA2E9F8B2D001BA81F /* FirebaseMessaging */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 6B31B4D92E9F8B2D001BA81F /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseMessaging;
+		};
+		6B31B4FC2E9F8B2D001BA81F /* FirebasePerformance */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 6B31B4D92E9F8B2D001BA81F /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebasePerformance;
+		};
+		6B31B5002E9F8B2D001BA81F /* FirebaseStorage */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 6B31B4D92E9F8B2D001BA81F /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseStorage;
+		};
+		6B4467092EE708750063A0FA /* SocketIO */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 6B4467082EE708750063A0FA /* XCRemoteSwiftPackageReference "socket" */;
+			productName = SocketIO;
+		};
+		6B72CF5A2ECB27A200D3E809 /* Cosmos */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 6B72CF592ECB27A200D3E809 /* XCRemoteSwiftPackageReference "Cosmos" */;
+			productName = Cosmos;
+		};
+		6B7FCC322E9D12DC0080B90D /* Kingfisher */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 6B7FCC312E9D12DC0080B90D /* XCRemoteSwiftPackageReference "Kingfisher" */;
+			productName = Kingfisher;
+		};
+		6B7FCC352E9D12F80080B90D /* Alamofire */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 6B7FCC342E9D12F80080B90D /* XCRemoteSwiftPackageReference "Alamofire" */;
+			productName = Alamofire;
+		};
+		6B7FCC382E9D13420080B90D /* Lottie */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 6B7FCC372E9D13420080B90D /* XCRemoteSwiftPackageReference "lottie-spm" */;
+			productName = Lottie;
+		};
+		6BB165EE2E9F88D100A00B87 /* GoogleMaps */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 6BB165ED2E9F88D100A00B87 /* XCRemoteSwiftPackageReference "ios-maps-sdk" */;
+			productName = GoogleMaps;
+		};
+		6BB165F12E9F88F500A00B87 /* IQKeyboardManagerSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 6BB165F02E9F88F500A00B87 /* XCRemoteSwiftPackageReference "IQKeyboardManager" */;
+			productName = IQKeyboardManagerSwift;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = 6B7FC6F72E9CFFD90080B90D /* Project object */;
+}

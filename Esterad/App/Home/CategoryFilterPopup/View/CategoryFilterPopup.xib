@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="24412" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="24405"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="CategoryFilterPopup" customModule="Esterad" customModuleProvider="target">
+            <connections>
+                <outlet property="backView" destination="Yi0-PZ-Ecn" id="NL8-lg-YZA"/>
+                <outlet property="categoryPickerField" destination="3F7-Wm-KX9" id="JVi-vF-Pnv"/>
+                <outlet property="contentView" destination="GSg-V7-21N" id="KEg-6V-ujc"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view alpha="0.0" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Yi0-PZ-Ecn" userLabel="BackView">
+                    <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                </view>
+                <view contentMode="scaleToFill" placeholderIntrinsicWidth="200" placeholderIntrinsicHeight="200" translatesAutoresizingMaskIntoConstraints="NO" id="GSg-V7-21N" userLabel="ContentView">
+                    <rect key="frame" x="0.0" y="583.66666666666663" width="393" height="268.33333333333337"/>
+                    <subviews>
+                        <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="6" translatesAutoresizingMaskIntoConstraints="NO" id="COQ-RW-MxL" userLabel="ContainerStackView">
+                            <rect key="frame" x="0.0" y="0.0" width="393" height="268.33333333333331"/>
+                            <subviews>
+                                <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="jx0-av-xeB" userLabel="TitleStackView">
+                                    <rect key="frame" x="24" y="24" width="345" height="19.333333333333329"/>
+                                    <subviews>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0Q6-ua-pKT">
+                                            <rect key="frame" x="0.0" y="0.0" width="345" height="19.333333333333332"/>
+                                            <fontDescription key="fontDescription" type="system" weight="medium" pointSize="16"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                            <userDefinedRuntimeAttributes>
+                                                <userDefinedRuntimeAttribute type="string" keyPath="xibLocKey" value="filter"/>
+                                            </userDefinedRuntimeAttributes>
+                                        </label>
+                                    </subviews>
+                                </stackView>
+                                <view contentMode="scaleToFill" placeholderIntrinsicWidth="345" placeholderIntrinsicHeight="100" translatesAutoresizingMaskIntoConstraints="NO" id="3F7-Wm-KX9" userLabel="CategoryPickerFieldView" customClass="PickerFieldView" customModule="Esterad" customModuleProvider="target">
+                                    <rect key="frame" x="24" y="49.333333333333371" width="345" height="100"/>
+                                    <userDefinedRuntimeAttributes>
+                                        <userDefinedRuntimeAttribute type="string" keyPath="titleTxt" value="section"/>
+                                        <userDefinedRuntimeAttribute type="color" keyPath="stackBackgroundColor">
+                                            <color key="value" name="whiteColor"/>
+                                        </userDefinedRuntimeAttribute>
+                                        <userDefinedRuntimeAttribute type="color" keyPath="stackBorderColor">
+                                            <color key="value" name="TextFieldBorder"/>
+                                        </userDefinedRuntimeAttribute>
+                                        <userDefinedRuntimeAttribute type="string" keyPath="placeHolderTxt" value="section"/>
+                                    </userDefinedRuntimeAttributes>
+                                </view>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="43X-St-0gL" customClass="MainButton" customModule="Esterad" customModuleProvider="target">
+                                    <rect key="frame" x="24" y="155.33333333333337" width="345" height="29"/>
+                                    <color key="backgroundColor" name="Main"/>
+                                    <fontDescription key="fontDescription" type="system" weight="medium" pointSize="14"/>
+                                    <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                    <state key="normal" title="Send"/>
+                                    <userDefinedRuntimeAttributes>
+                                        <userDefinedRuntimeAttribute type="string" keyPath="xibLocKey" value="show_results"/>
+                                    </userDefinedRuntimeAttributes>
+                                    <connections>
+                                        <action selector="didTapShowRsult:" destination="-1" eventType="touchUpInside" id="rUn-e0-41O"/>
+                                    </connections>
+                                </button>
+                            </subviews>
+                            <edgeInsets key="layoutMargins" top="24" left="24" bottom="16" right="24"/>
+                        </stackView>
+                    </subviews>
+                    <color key="backgroundColor" name="MainBackGround"/>
+                    <constraints>
+                        <constraint firstItem="COQ-RW-MxL" firstAttribute="leading" secondItem="GSg-V7-21N" secondAttribute="leading" id="GOr-U1-kD2"/>
+                        <constraint firstAttribute="trailing" secondItem="COQ-RW-MxL" secondAttribute="trailing" id="S5C-Ud-4ac"/>
+                        <constraint firstAttribute="bottom" secondItem="COQ-RW-MxL" secondAttribute="bottom" id="byd-jR-AG4"/>
+                        <constraint firstItem="COQ-RW-MxL" firstAttribute="top" secondItem="GSg-V7-21N" secondAttribute="top" id="zfR-Nw-HC2"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="Yi0-PZ-Ecn" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="NV3-on-85u"/>
+                <constraint firstItem="GSg-V7-21N" firstAttribute="trailing" secondItem="fnl-2z-Ty3" secondAttribute="trailing" id="SN1-kI-0io"/>
+                <constraint firstItem="Yi0-PZ-Ecn" firstAttribute="trailing" secondItem="fnl-2z-Ty3" secondAttribute="trailing" id="U1P-NT-jRh"/>
+                <constraint firstAttribute="bottom" secondItem="Yi0-PZ-Ecn" secondAttribute="bottom" id="Va7-Gy-HGc"/>
+                <constraint firstAttribute="bottom" secondItem="GSg-V7-21N" secondAttribute="bottom" id="WEg-Xu-OPe"/>
+                <constraint firstItem="Yi0-PZ-Ecn" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="vJc-Ok-ivg"/>
+                <constraint firstItem="GSg-V7-21N" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="wwN-Ti-GXy"/>
+            </constraints>
+            <point key="canvasLocation" x="-234" y="110"/>
+        </view>
+    </objects>
+    <resources>
+        <namedColor name="Main">
+            <color red="0.031372549019607843" green="0.4823529411764706" blue="0.36470588235294116" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="MainBackGround">
+            <color red="0.98431372549019602" green="0.98431372549019602" blue="0.98431372549019602" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+        </namedColor>
+        <namedColor name="TextFieldBorder">
+            <color red="0.94901960784313721" green="0.94901960784313721" blue="0.94901960784313721" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="whiteColor">
+            <color red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+        </namedColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

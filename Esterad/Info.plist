@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>NSLocationWhenInUseUsageDescription</key>
+	<string>We use your location to detect your address and show nearby stores and accurate delivery options.</string>
+	<key>NSCameraUsageDescription</key>
+	<string>We need access to your camera so you can take photos for your profile and order documents.</string>
+	<key>NSPhotoLibraryUsageDescription</key>
+	<string>We need access to your photo library so you can upload images for your profile and order documents.</string>
+	<key>UIAppFonts</key>
+	<array>
+		<string>ExpoArabic-Bold.ttf</string>
+		<string>ExpoArabic-Medium.ttf</string>
+		<string>ExpoArabic-SemiBold.ttf</string>
+		<string>ExpoArabic-Book.ttf</string>
+		<string>ExpoArabic-Light.ttf</string>
+	</array>
+	<key>UIApplicationSceneManifest</key>
+	<dict>
+		<key>UIApplicationSupportsMultipleScenes</key>
+		<false/>
+		<key>UISceneConfigurations</key>
+		<dict>
+			<key>UIWindowSceneSessionRoleApplication</key>
+			<array>
+				<dict>
+					<key>UISceneConfigurationName</key>
+					<string>Default Configuration</string>
+					<key>UISceneDelegateClassName</key>
+					<string>$(PRODUCT_MODULE_NAME).SceneDelegate</string>
+				</dict>
+			</array>
+		</dict>
+	</dict>
+</dict>
+</plist>

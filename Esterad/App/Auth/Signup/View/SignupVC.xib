@@ -1,0 +1,344 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="24412" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="24405"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="SignupVC" customModule="Esterad" customModuleProvider="target">
+            <connections>
+                <outlet property="checkBoxButton" destination="Me7-96-hyu" id="Obm-pS-rnb"/>
+                <outlet property="confirmBtn" destination="Taf-fb-ZBT" id="ARa-3G-7O5"/>
+                <outlet property="confirmPasswordTextField" destination="UNS-9t-oW7" id="SzS-Bb-mwb"/>
+                <outlet property="emailTextField" destination="O2p-fd-28s" id="eNY-4N-lAq"/>
+                <outlet property="passwordTextField" destination="74H-qy-yQA" id="T41-Ae-wZs"/>
+                <outlet property="phoneTextField" destination="uXp-m5-Eln" id="S94-VT-GZh"/>
+                <outlet property="profileImage" destination="KZQ-gf-I9j" id="Ucd-dl-WYh"/>
+                <outlet property="usernameTextField" destination="X4Q-zM-Fee" id="8ag-Cx-Fgk"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="mUc-M0-haj" userLabel="ContainerStackView">
+                    <rect key="frame" x="0.0" y="118" width="393" height="640"/>
+                    <subviews>
+                        <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xz7-OD-NRx">
+                            <rect key="frame" x="0.0" y="0.0" width="393" height="640"/>
+                            <subviews>
+                                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="32" translatesAutoresizingMaskIntoConstraints="NO" id="2Px-tD-Wox" userLabel="ContentStackView">
+                                    <rect key="frame" x="0.0" y="0.0" width="393" height="668.33333333333337"/>
+                                    <subviews>
+                                        <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="o6b-rA-p29" userLabel="HeaderStackView">
+                                            <rect key="frame" x="16" y="16" width="361" height="51"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Welcome " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Sam-Vz-xcP">
+                                                    <rect key="frame" x="0.0" y="0.0" width="361" height="28.666666666666668"/>
+                                                    <fontDescription key="fontDescription" type="system" weight="medium" pointSize="24"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                    <userDefinedRuntimeAttributes>
+                                                        <userDefinedRuntimeAttribute type="string" keyPath="xibLocKey" value="welcome"/>
+                                                    </userDefinedRuntimeAttributes>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AUi-Aq-Tc7">
+                                                    <rect key="frame" x="0.0" y="36.666666666666657" width="361" height="14.333333333333336"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                                    <color key="textColor" name="hintColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                    <userDefinedRuntimeAttributes>
+                                                        <userDefinedRuntimeAttribute type="string" keyPath="xibLocKey" value="enter_registration_data"/>
+                                                    </userDefinedRuntimeAttributes>
+                                                </label>
+                                            </subviews>
+                                        </stackView>
+                                        <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="T9m-be-BIT" userLabel="ImageStackView">
+                                            <rect key="frame" x="16" y="99" width="361" height="102.33333333333331"/>
+                                            <subviews>
+                                                <imageView clipsSubviews="YES" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="profilePic" translatesAutoresizingMaskIntoConstraints="NO" id="KZQ-gf-I9j">
+                                                    <rect key="frame" x="140.66666666666666" y="0.0" width="80" height="80"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" constant="80" id="Ufa-yQ-PHm"/>
+                                                        <constraint firstAttribute="width" secondItem="KZQ-gf-I9j" secondAttribute="height" multiplier="1:1" id="kYb-6D-5Ov"/>
+                                                    </constraints>
+                                                </imageView>
+                                                <stackView opaque="NO" contentMode="scaleToFill" spacing="4" translatesAutoresizingMaskIntoConstraints="NO" id="1u3-gm-wFG">
+                                                    <rect key="frame" x="149.66666666666666" y="88" width="62" height="14.333333333333329"/>
+                                                    <subviews>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XTo-TJ-OnE">
+                                                            <rect key="frame" x="0.0" y="0.0" width="31.666666666666668" height="14.333333333333334"/>
+                                                            <fontDescription key="fontDescription" type="system" weight="medium" pointSize="12"/>
+                                                            <nil key="textColor"/>
+                                                            <nil key="highlightedColor"/>
+                                                            <userDefinedRuntimeAttributes>
+                                                                <userDefinedRuntimeAttribute type="string" keyPath="xibLocKey" value="upload_profile_picture"/>
+                                                            </userDefinedRuntimeAttributes>
+                                                        </label>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Drb-Sw-PW0">
+                                                            <rect key="frame" x="35.666666666666686" y="0.0" width="26.333333333333329" height="14.333333333333334"/>
+                                                            <fontDescription key="fontDescription" type="system" pointSize="10"/>
+                                                            <color key="textColor" name="hintColor"/>
+                                                            <nil key="highlightedColor"/>
+                                                            <userDefinedRuntimeAttributes>
+                                                                <userDefinedRuntimeAttribute type="string" keyPath="xibLocKey" value="optional"/>
+                                                            </userDefinedRuntimeAttributes>
+                                                        </label>
+                                                    </subviews>
+                                                </stackView>
+                                            </subviews>
+                                        </stackView>
+                                        <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="4" translatesAutoresizingMaskIntoConstraints="NO" id="ZOZ-lQ-FkL" userLabel="TextFieldsStackView">
+                                            <rect key="frame" x="16" y="233.33333333333331" width="361" height="359.99999999999994"/>
+                                            <subviews>
+                                                <view contentMode="scaleToFill" placeholderIntrinsicWidth="345" placeholderIntrinsicHeight="50" translatesAutoresizingMaskIntoConstraints="NO" id="X4Q-zM-Fee" userLabel="UserNameTextField" customClass="GeneralTextField" customModule="Esterad" customModuleProvider="target">
+                                                    <rect key="frame" x="0.0" y="0.0" width="361" height="50"/>
+                                                    <userDefinedRuntimeAttributes>
+                                                        <userDefinedRuntimeAttribute type="boolean" keyPath="isRequiredProperty" value="NO"/>
+                                                        <userDefinedRuntimeAttribute type="string" keyPath="titleTxt" value="username"/>
+                                                        <userDefinedRuntimeAttribute type="boolean" keyPath="isLabelHidden" value="YES"/>
+                                                        <userDefinedRuntimeAttribute type="string" keyPath="placeHolderTxt" value="username"/>
+                                                        <userDefinedRuntimeAttribute type="boolean" keyPath="isButtonHidden" value="YES"/>
+                                                        <userDefinedRuntimeAttribute type="color" keyPath="stackBorderColor">
+                                                            <color key="value" name="TextFieldBorder"/>
+                                                        </userDefinedRuntimeAttribute>
+                                                        <userDefinedRuntimeAttribute type="color" keyPath="stackBackgroundColor">
+                                                            <color key="value" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        </userDefinedRuntimeAttribute>
+                                                    </userDefinedRuntimeAttributes>
+                                                </view>
+                                                <view contentMode="scaleToFill" placeholderIntrinsicWidth="345" placeholderIntrinsicHeight="120" translatesAutoresizingMaskIntoConstraints="NO" id="uXp-m5-Eln" userLabel="PhoneTextField" customClass="PhoneTextField" customModule="Esterad" customModuleProvider="target">
+                                                    <rect key="frame" x="0.0" y="54" width="361" height="120"/>
+                                                    <userDefinedRuntimeAttributes>
+                                                        <userDefinedRuntimeAttribute type="string" keyPath="titleTxt" value="phone_number"/>
+                                                        <userDefinedRuntimeAttribute type="boolean" keyPath="isRequiredProperty" value="NO"/>
+                                                        <userDefinedRuntimeAttribute type="boolean" keyPath="isLabelHidden" value="YES"/>
+                                                        <userDefinedRuntimeAttribute type="string" keyPath="placeHolderTxt" value="phone_number"/>
+                                                        <userDefinedRuntimeAttribute type="color" keyPath="stackBorderColor">
+                                                            <color key="value" name="TextFieldBorder"/>
+                                                        </userDefinedRuntimeAttribute>
+                                                    </userDefinedRuntimeAttributes>
+                                                </view>
+                                                <view contentMode="scaleToFill" placeholderIntrinsicWidth="345" placeholderIntrinsicHeight="50" translatesAutoresizingMaskIntoConstraints="NO" id="O2p-fd-28s" userLabel="EmailTextField" customClass="GeneralTextField" customModule="Esterad" customModuleProvider="target">
+                                                    <rect key="frame" x="0.0" y="178.00000000000006" width="361" height="50"/>
+                                                    <userDefinedRuntimeAttributes>
+                                                        <userDefinedRuntimeAttribute type="string" keyPath="titleTxt" value="email"/>
+                                                        <userDefinedRuntimeAttribute type="boolean" keyPath="isLabelHidden" value="NO"/>
+                                                        <userDefinedRuntimeAttribute type="string" keyPath="placeHolderTxt" value="email"/>
+                                                        <userDefinedRuntimeAttribute type="boolean" keyPath="isButtonHidden" value="YES"/>
+                                                        <userDefinedRuntimeAttribute type="color" keyPath="stackBorderColor">
+                                                            <color key="value" name="TextFieldBorder"/>
+                                                        </userDefinedRuntimeAttribute>
+                                                        <userDefinedRuntimeAttribute type="color" keyPath="stackBackgroundColor">
+                                                            <color key="value" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        </userDefinedRuntimeAttribute>
+                                                        <userDefinedRuntimeAttribute type="string" keyPath="requiredTxt" value="optional"/>
+                                                        <userDefinedRuntimeAttribute type="boolean" keyPath="isRequiredProperty" value="NO"/>
+                                                        <userDefinedRuntimeAttribute type="number" keyPath="keyboardTypeRawValue">
+                                                            <integer key="value" value="7"/>
+                                                        </userDefinedRuntimeAttribute>
+                                                    </userDefinedRuntimeAttributes>
+                                                </view>
+                                                <view contentMode="scaleToFill" placeholderIntrinsicWidth="345" placeholderIntrinsicHeight="50" translatesAutoresizingMaskIntoConstraints="NO" id="74H-qy-yQA" userLabel="PasswordTextField" customClass="PasswordTextField" customModule="Esterad" customModuleProvider="target">
+                                                    <rect key="frame" x="0.0" y="232.00000000000006" width="361" height="50"/>
+                                                    <userDefinedRuntimeAttributes>
+                                                        <userDefinedRuntimeAttribute type="boolean" keyPath="isRequiredProperty" value="NO"/>
+                                                        <userDefinedRuntimeAttribute type="string" keyPath="titleTxt" value="password"/>
+                                                        <userDefinedRuntimeAttribute type="boolean" keyPath="isLabelHidden" value="YES"/>
+                                                        <userDefinedRuntimeAttribute type="string" keyPath="placeHolderTxt" value="password"/>
+                                                        <userDefinedRuntimeAttribute type="boolean" keyPath="isButtonHidden" value="NO"/>
+                                                        <userDefinedRuntimeAttribute type="image" keyPath="buttonIcon" value="eye.slash.fill" catalog="system"/>
+                                                        <userDefinedRuntimeAttribute type="color" keyPath="stackBorderColor">
+                                                            <color key="value" name="TextFieldBorder"/>
+                                                        </userDefinedRuntimeAttribute>
+                                                        <userDefinedRuntimeAttribute type="color" keyPath="stackBackgroundColor">
+                                                            <color key="value" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        </userDefinedRuntimeAttribute>
+                                                    </userDefinedRuntimeAttributes>
+                                                </view>
+                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="UNS-9t-oW7" userLabel="ConfirmPasswordTextField" customClass="PasswordTextField" customModule="Esterad" customModuleProvider="target">
+                                                    <rect key="frame" x="0.0" y="286.00000000000006" width="361" height="50"/>
+                                                    <userDefinedRuntimeAttributes>
+                                                        <userDefinedRuntimeAttribute type="boolean" keyPath="isRequiredProperty" value="NO"/>
+                                                        <userDefinedRuntimeAttribute type="string" keyPath="titleTxt" value="confirm_password"/>
+                                                        <userDefinedRuntimeAttribute type="boolean" keyPath="isLabelHidden" value="YES"/>
+                                                        <userDefinedRuntimeAttribute type="string" keyPath="placeHolderTxt" value="password"/>
+                                                        <userDefinedRuntimeAttribute type="boolean" keyPath="isButtonHidden" value="NO"/>
+                                                        <userDefinedRuntimeAttribute type="image" keyPath="buttonIcon" value="eye.slash.fill" catalog="system"/>
+                                                        <userDefinedRuntimeAttribute type="color" keyPath="stackBorderColor">
+                                                            <color key="value" name="TextFieldBorder"/>
+                                                        </userDefinedRuntimeAttribute>
+                                                        <userDefinedRuntimeAttribute type="color" keyPath="stackBackgroundColor">
+                                                            <color key="value" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        </userDefinedRuntimeAttribute>
+                                                    </userDefinedRuntimeAttributes>
+                                                </view>
+                                                <stackView opaque="NO" contentMode="scaleToFill" spacing="4" translatesAutoresizingMaskIntoConstraints="NO" id="UeB-vl-87Z" userLabel="Terms&amp;ConditionsStackView">
+                                                    <rect key="frame" x="0.0" y="340.00000000000006" width="361" height="20"/>
+                                                    <subviews>
+                                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Me7-96-hyu" userLabel="CheckBox">
+                                                            <rect key="frame" x="0.0" y="0.0" width="20" height="20"/>
+                                                            <constraints>
+                                                                <constraint firstAttribute="height" constant="20" id="7Nk-sm-zYM"/>
+                                                                <constraint firstAttribute="width" constant="20" id="8Y7-Gv-iff"/>
+                                                            </constraints>
+                                                            <color key="tintColor" name="Main"/>
+                                                            <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                                            <state key="normal" image="square" catalog="system"/>
+                                                            <connections>
+                                                                <action selector="didTapCheckBox:" destination="-1" eventType="touchUpInside" id="KQM-0g-cwh"/>
+                                                            </connections>
+                                                        </button>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="d6L-UC-rM2">
+                                                            <rect key="frame" x="24.000000000000004" y="0.0" width="35.333333333333343" height="20"/>
+                                                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                            <color key="textColor" name="hintColor"/>
+                                                            <nil key="highlightedColor"/>
+                                                            <userDefinedRuntimeAttributes>
+                                                                <userDefinedRuntimeAttribute type="string" keyPath="xibLocKey" value="agree_to"/>
+                                                            </userDefinedRuntimeAttributes>
+                                                        </label>
+                                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="leading" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hHF-Wr-oVU" customClass="UnderlinedButton" customModule="Esterad" customModuleProvider="target">
+                                                            <rect key="frame" x="63.333333333333343" y="0.0" width="297.66666666666663" height="20"/>
+                                                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                            <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                                            <state key="normal" title="terms and conditions">
+                                                                <color key="titleColor" name="Main"/>
+                                                            </state>
+                                                            <userDefinedRuntimeAttributes>
+                                                                <userDefinedRuntimeAttribute type="string" keyPath="xibLocKey" value="terms_and_conditions"/>
+                                                                <userDefinedRuntimeAttribute type="boolean" keyPath="isUnderlined" value="YES"/>
+                                                            </userDefinedRuntimeAttributes>
+                                                            <connections>
+                                                                <action selector="didTapTermsAndConditions:" destination="-1" eventType="touchUpInside" id="Km0-PL-Gel"/>
+                                                            </connections>
+                                                        </button>
+                                                    </subviews>
+                                                </stackView>
+                                            </subviews>
+                                        </stackView>
+                                        <stackView opaque="NO" contentMode="scaleToFill" alignment="center" spacing="4" translatesAutoresizingMaskIntoConstraints="NO" id="6dw-dl-yYZ" userLabel="LoginStackView">
+                                            <rect key="frame" x="119.33333333333333" y="625.33333333333337" width="154.33333333333337" height="27"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" text="already have account" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tMh-nQ-5kR">
+                                                    <rect key="frame" x="0.0" y="6.3333333333332584" width="120.33333333333333" height="14.333333333333336"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                                    <color key="textColor" name="hintColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                    <userDefinedRuntimeAttributes>
+                                                        <userDefinedRuntimeAttribute type="string" keyPath="xibLocKey" value="already_have_account"/>
+                                                    </userDefinedRuntimeAttributes>
+                                                </label>
+                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MdT-zs-X9q" userLabel="login" customClass="UnderlinedButton" customModule="Esterad" customModuleProvider="target">
+                                                    <rect key="frame" x="124.33333333333331" y="0.0" width="30" height="27"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                                    <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                                    <state key="normal" title="login">
+                                                        <color key="titleColor" name="Main"/>
+                                                    </state>
+                                                    <userDefinedRuntimeAttributes>
+                                                        <userDefinedRuntimeAttribute type="string" keyPath="xibLocKey" value="login"/>
+                                                        <userDefinedRuntimeAttribute type="boolean" keyPath="isUnderlined" value="YES"/>
+                                                    </userDefinedRuntimeAttributes>
+                                                    <connections>
+                                                        <action selector="didTapLogin:" destination="-1" eventType="touchUpInside" id="ohc-ML-ry3"/>
+                                                    </connections>
+                                                </button>
+                                            </subviews>
+                                        </stackView>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstItem="6dw-dl-yYZ" firstAttribute="centerX" secondItem="2Px-tD-Wox" secondAttribute="centerX" id="4Nv-hl-L6l"/>
+                                        <constraint firstItem="o6b-rA-p29" firstAttribute="leading" secondItem="2Px-tD-Wox" secondAttribute="leading" constant="16" id="Ebf-ay-nSl"/>
+                                        <constraint firstAttribute="trailing" secondItem="ZOZ-lQ-FkL" secondAttribute="trailing" constant="16" id="Up1-Ck-Kxs"/>
+                                        <constraint firstAttribute="trailing" secondItem="T9m-be-BIT" secondAttribute="trailing" constant="16" id="dfo-B9-Tec"/>
+                                        <constraint firstAttribute="trailing" secondItem="o6b-rA-p29" secondAttribute="trailing" constant="16" id="iOL-vl-27o"/>
+                                        <constraint firstItem="T9m-be-BIT" firstAttribute="leading" secondItem="2Px-tD-Wox" secondAttribute="leading" constant="16" id="qJV-77-DM4"/>
+                                        <constraint firstItem="ZOZ-lQ-FkL" firstAttribute="leading" secondItem="2Px-tD-Wox" secondAttribute="leading" constant="16" id="w2Q-2l-256"/>
+                                    </constraints>
+                                    <edgeInsets key="layoutMargins" top="16" left="16" bottom="16" right="16"/>
+                                </stackView>
+                            </subviews>
+                            <constraints>
+                                <constraint firstItem="2Px-tD-Wox" firstAttribute="width" secondItem="nuX-xD-b40" secondAttribute="width" id="BWT-RW-fij"/>
+                                <constraint firstItem="2Px-tD-Wox" firstAttribute="trailing" secondItem="n2c-JG-PCE" secondAttribute="trailing" id="Ddh-hH-Rp3"/>
+                                <constraint firstItem="2Px-tD-Wox" firstAttribute="bottom" secondItem="n2c-JG-PCE" secondAttribute="bottom" id="ECX-Gq-vUb"/>
+                                <constraint firstItem="2Px-tD-Wox" firstAttribute="top" secondItem="n2c-JG-PCE" secondAttribute="top" id="Fkc-4q-eAS"/>
+                                <constraint firstItem="2Px-tD-Wox" firstAttribute="height" secondItem="nuX-xD-b40" secondAttribute="height" priority="250" id="Z1H-YL-SPd"/>
+                                <constraint firstItem="2Px-tD-Wox" firstAttribute="leading" secondItem="n2c-JG-PCE" secondAttribute="leading" id="iNt-gB-Lqo"/>
+                            </constraints>
+                            <viewLayoutGuide key="contentLayoutGuide" id="n2c-JG-PCE"/>
+                            <viewLayoutGuide key="frameLayoutGuide" id="nuX-xD-b40"/>
+                        </scrollView>
+                    </subviews>
+                </stackView>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="KWd-b2-xnc" userLabel="ButtonView">
+                    <rect key="frame" x="0.0" y="758" width="393" height="86"/>
+                    <subviews>
+                        <button opaque="NO" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Taf-fb-ZBT" userLabel="Confirm" customClass="MainButton" customModule="Esterad" customModuleProvider="target">
+                            <rect key="frame" x="16" y="16" width="361" height="54"/>
+                            <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <fontDescription key="fontDescription" type="system" weight="medium" pointSize="16"/>
+                            <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                            <state key="normal" title="Button"/>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="string" keyPath="xibLocKey" value="confirm"/>
+                            </userDefinedRuntimeAttributes>
+                            <connections>
+                                <action selector="didTapConfirm:" destination="-1" eventType="touchUpInside" id="RKi-wL-e6U"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" name="whiteColor"/>
+                    <constraints>
+                        <constraint firstItem="Taf-fb-ZBT" firstAttribute="centerX" secondItem="KWd-b2-xnc" secondAttribute="centerX" id="3ic-T0-JKF"/>
+                        <constraint firstAttribute="height" constant="86" id="4il-3h-fgv"/>
+                        <constraint firstAttribute="bottom" secondItem="Taf-fb-ZBT" secondAttribute="bottom" constant="16" id="NWo-N0-fMa"/>
+                        <constraint firstItem="Taf-fb-ZBT" firstAttribute="centerY" secondItem="KWd-b2-xnc" secondAttribute="centerY" id="TsI-ts-pOy"/>
+                        <constraint firstAttribute="trailing" secondItem="Taf-fb-ZBT" secondAttribute="trailing" constant="16" id="UhW-O2-Jn3"/>
+                        <constraint firstItem="Taf-fb-ZBT" firstAttribute="top" secondItem="KWd-b2-xnc" secondAttribute="top" constant="16" id="Yh3-C2-EBh"/>
+                        <constraint firstItem="Taf-fb-ZBT" firstAttribute="leading" secondItem="KWd-b2-xnc" secondAttribute="leading" constant="16" id="oPd-yB-kd0"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="KWd-b2-xnc" secondAttribute="bottom" constant="8" id="HS1-T1-CJ6"/>
+                <constraint firstItem="mUc-M0-haj" firstAttribute="trailing" secondItem="fnl-2z-Ty3" secondAttribute="trailing" id="Vyh-sS-PHT"/>
+                <constraint firstItem="mUc-M0-haj" firstAttribute="bottom" secondItem="KWd-b2-xnc" secondAttribute="top" id="XSD-fL-E3P"/>
+                <constraint firstItem="KWd-b2-xnc" firstAttribute="trailing" secondItem="fnl-2z-Ty3" secondAttribute="trailing" id="l6X-nv-oiI"/>
+                <constraint firstItem="mUc-M0-haj" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" id="sQd-E4-Sio"/>
+                <constraint firstItem="KWd-b2-xnc" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="vfs-ab-bDa"/>
+                <constraint firstItem="mUc-M0-haj" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="xKy-MR-Vv6"/>
+            </constraints>
+            <point key="canvasLocation" x="50" y="20"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="eye.slash.fill" catalog="system" width="128" height="96"/>
+        <image name="profilePic" width="80.333335876464844" height="80"/>
+        <image name="square" catalog="system" width="128" height="114"/>
+        <namedColor name="Main">
+            <color red="0.031372549019607843" green="0.4823529411764706" blue="0.36470588235294116" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="TextFieldBorder">
+            <color red="0.94901960784313721" green="0.94901960784313721" blue="0.94901960784313721" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="hintColor">
+            <color red="0.54117647058823526" green="0.54117647058823526" blue="0.54117647058823526" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="whiteColor">
+            <color red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+        </namedColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

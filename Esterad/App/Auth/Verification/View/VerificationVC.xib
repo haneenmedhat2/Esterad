@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="24412" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="24405"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="VerificationVC" customModule="Esterad" customModuleProvider="target">
+            <connections>
+                <outlet property="OTPField" destination="RaS-YX-DyX" id="aIU-BV-dCA"/>
+                <outlet property="resendCodeBtn" destination="Cha-xm-r8g" id="J7T-Kf-5XJ"/>
+                <outlet property="timerLabel" destination="8LJ-Yc-HIg" id="p0H-n7-HMR"/>
+                <outlet property="titleLabel" destination="KgV-R7-8hK" id="z88-bv-tEF"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="a0k-FN-dqb">
+                    <rect key="frame" x="0.0" y="118" width="393" height="666"/>
+                    <subviews>
+                        <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="32" translatesAutoresizingMaskIntoConstraints="NO" id="eKQ-sA-eT4" userLabel="ContainerStackView">
+                            <rect key="frame" x="0.0" y="0.0" width="393" height="676.33333333333337"/>
+                            <subviews>
+                                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="24" translatesAutoresizingMaskIntoConstraints="NO" id="t3e-x4-sa7" userLabel="HeaderStackView">
+                                    <rect key="frame" x="16" y="16" width="361" height="118"/>
+                                    <subviews>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7yX-HK-wX8">
+                                            <rect key="frame" x="142.33333333333334" y="0.0" width="76.666666666666657" height="36"/>
+                                            <fontDescription key="fontDescription" type="boldSystem" pointSize="30"/>
+                                            <color key="textColor" name="Main"/>
+                                            <nil key="highlightedColor"/>
+                                            <userDefinedRuntimeAttributes>
+                                                <userDefinedRuntimeAttribute type="string" keyPath="xibLocKey" value="Esterad"/>
+                                            </userDefinedRuntimeAttributes>
+                                        </label>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KgV-R7-8hK">
+                                            <rect key="frame" x="163" y="60" width="35.333333333333343" height="17"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                            <color key="textColor" name="hintColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <stackView opaque="NO" contentMode="scaleToFill" spacing="4" translatesAutoresizingMaskIntoConstraints="NO" id="EGS-zB-4VU" userLabel="RemainingTimeStackView">
+                                            <rect key="frame" x="143.33333333333334" y="101" width="74.666666666666657" height="17"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7Rg-pJ-6uY">
+                                                    <rect key="frame" x="0.0" y="0.0" width="35.333333333333336" height="17"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                    <color key="textColor" name="hintColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                    <userDefinedRuntimeAttributes>
+                                                        <userDefinedRuntimeAttribute type="string" keyPath="xibLocKey" value="time_remaining"/>
+                                                    </userDefinedRuntimeAttributes>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8LJ-Yc-HIg">
+                                                    <rect key="frame" x="39.333333333333314" y="0.0" width="35.333333333333343" height="17"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                    <color key="textColor" name="Main"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                        </stackView>
+                                    </subviews>
+                                </stackView>
+                                <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="RaS-YX-DyX" customClass="OTPTextField" customModule="Esterad" customModuleProvider="target">
+                                    <rect key="frame" x="16" y="166" width="361" height="48"/>
+                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="48" id="jnv-Ip-xCz"/>
+                                    </constraints>
+                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                    <textInputTraits key="textInputTraits"/>
+                                </textField>
+                                <button opaque="NO" contentMode="scaleToFill" placeholderIntrinsicWidth="345" placeholderIntrinsicHeight="355.33333333333326" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jqB-7e-bob" customClass="MainButton" customModule="Esterad" customModuleProvider="target">
+                                    <rect key="frame" x="16" y="245.99999999999997" width="361" height="355.33333333333326"/>
+                                    <fontDescription key="fontDescription" type="system" weight="medium" pointSize="16"/>
+                                    <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                    <state key="normal" title="Button"/>
+                                    <userDefinedRuntimeAttributes>
+                                        <userDefinedRuntimeAttribute type="string" keyPath="xibLocKey" value="verify"/>
+                                    </userDefinedRuntimeAttributes>
+                                    <connections>
+                                        <action selector="didTapConfirm:" destination="-1" eventType="touchUpInside" id="BTD-Qu-r7h"/>
+                                    </connections>
+                                </button>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Cha-xm-r8g" userLabel="ResendCode" customClass="UnderlinedButton" customModule="Esterad" customModuleProvider="target">
+                                    <rect key="frame" x="16" y="633.33333333333337" width="361" height="27"/>
+                                    <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                    <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                    <state key="normal" title="Button">
+                                        <color key="titleColor" name="Main"/>
+                                    </state>
+                                    <userDefinedRuntimeAttributes>
+                                        <userDefinedRuntimeAttribute type="string" keyPath="xibLocKey" value="resend_code"/>
+                                        <userDefinedRuntimeAttribute type="boolean" keyPath="isUnderlined" value="YES"/>
+                                    </userDefinedRuntimeAttributes>
+                                    <connections>
+                                        <action selector="didTapResendCode:" destination="-1" eventType="touchUpInside" id="WYM-hG-rKZ"/>
+                                    </connections>
+                                </button>
+                            </subviews>
+                            <edgeInsets key="layoutMargins" top="16" left="16" bottom="16" right="16"/>
+                        </stackView>
+                    </subviews>
+                    <constraints>
+                        <constraint firstItem="eKQ-sA-eT4" firstAttribute="top" secondItem="Riw-G1-P0F" secondAttribute="top" id="Fdm-pI-36c"/>
+                        <constraint firstItem="eKQ-sA-eT4" firstAttribute="height" secondItem="u76-jq-vkN" secondAttribute="height" priority="250" id="KFL-Ex-jHB"/>
+                        <constraint firstItem="eKQ-sA-eT4" firstAttribute="leading" secondItem="Riw-G1-P0F" secondAttribute="leading" id="VzU-ey-i1k"/>
+                        <constraint firstItem="eKQ-sA-eT4" firstAttribute="bottom" secondItem="Riw-G1-P0F" secondAttribute="bottom" id="WvK-aV-4ng"/>
+                        <constraint firstItem="eKQ-sA-eT4" firstAttribute="width" secondItem="u76-jq-vkN" secondAttribute="width" id="bwo-By-Gol"/>
+                        <constraint firstItem="eKQ-sA-eT4" firstAttribute="trailing" secondItem="Riw-G1-P0F" secondAttribute="trailing" id="g6Y-Or-VXc"/>
+                    </constraints>
+                    <viewLayoutGuide key="contentLayoutGuide" id="Riw-G1-P0F"/>
+                    <viewLayoutGuide key="frameLayoutGuide" id="u76-jq-vkN"/>
+                </scrollView>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="a0k-FN-dqb" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="9tu-0s-f3r"/>
+                <constraint firstItem="a0k-FN-dqb" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" id="H4f-7p-2V6"/>
+                <constraint firstItem="a0k-FN-dqb" firstAttribute="bottom" secondItem="fnl-2z-Ty3" secondAttribute="bottom" id="NyW-UM-Gms"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="a0k-FN-dqb" secondAttribute="trailing" id="Vh0-5V-WVr"/>
+            </constraints>
+            <point key="canvasLocation" x="49.618320610687022" y="19.718309859154932"/>
+        </view>
+    </objects>
+    <resources>
+        <namedColor name="Main">
+            <color red="0.031372549019607843" green="0.4823529411764706" blue="0.36470588235294116" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="hintColor">
+            <color red="0.54117647058823526" green="0.54117647058823526" blue="0.54117647058823526" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

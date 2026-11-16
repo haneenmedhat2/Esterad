@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="24412" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="24405"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="CategoryDetailsVC" customModule="Esterad" customModuleProvider="target">
+            <connections>
+                <outlet property="collectionView" destination="b7g-vI-Nyl" id="MbF-du-FQl"/>
+                <outlet property="homeModeView" destination="cc9-9u-PJU" id="HH5-B6-YgZ"/>
+                <outlet property="searchTextField" destination="w2g-dC-vLu" id="vkk-f8-tlU"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="xN8-7H-jNt" userLabel="ContainerStack View">
+                    <rect key="frame" x="0.0" y="118" width="393" height="666"/>
+                    <subviews>
+                        <view contentMode="scaleToFill" placeholderIntrinsicWidth="361" placeholderIntrinsicHeight="72" translatesAutoresizingMaskIntoConstraints="NO" id="cc9-9u-PJU" customClass="HomeModeTypesView" customModule="Esterad" customModuleProvider="target">
+                            <rect key="frame" x="16" y="16" width="361" height="70"/>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="70" id="Lpx-qZ-QVA"/>
+                            </constraints>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="number" keyPath="rtCornerRadius">
+                                    <real key="value" value="16"/>
+                                </userDefinedRuntimeAttribute>
+                                <userDefinedRuntimeAttribute type="number" keyPath="rtBorderWidth">
+                                    <real key="value" value="0.5"/>
+                                </userDefinedRuntimeAttribute>
+                                <userDefinedRuntimeAttribute type="color" keyPath="rtBorderColor">
+                                    <color key="value" name="TextFieldBorder"/>
+                                </userDefinedRuntimeAttribute>
+                            </userDefinedRuntimeAttributes>
+                        </view>
+                        <stackView opaque="NO" contentMode="scaleToFill" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="vJp-UH-fbu" userLabel="FilterSearchStackView">
+                            <rect key="frame" x="16" y="102" width="361" height="46"/>
+                            <subviews>
+                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="l9H-4Z-9QF" userLabel="SearchView">
+                                    <rect key="frame" x="0.0" y="0.0" width="307" height="46"/>
+                                    <subviews>
+                                        <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Y44-ye-A0H" userLabel="SearchStackView">
+                                            <rect key="frame" x="0.0" y="0.0" width="307" height="46"/>
+                                            <subviews>
+                                                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="2KA-Zb-pJh">
+                                                    <rect key="frame" x="0.0" y="0.0" width="261" height="46"/>
+                                                    <subviews>
+                                                        <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="w2g-dC-vLu">
+                                                            <rect key="frame" x="8" y="8" width="245" height="30"/>
+                                                            <color key="tintColor" name="Main"/>
+                                                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                            <textInputTraits key="textInputTraits"/>
+                                                            <userDefinedRuntimeAttributes>
+                                                                <userDefinedRuntimeAttribute type="string" keyPath="xibPlaceholderLocKey" value="search_by_product_name"/>
+                                                            </userDefinedRuntimeAttributes>
+                                                        </textField>
+                                                    </subviews>
+                                                    <edgeInsets key="layoutMargins" top="8" left="8" bottom="8" right="8"/>
+                                                </stackView>
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="search" translatesAutoresizingMaskIntoConstraints="NO" id="oZk-uk-3Md">
+                                                    <rect key="frame" x="261" y="0.0" width="46" height="46"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" constant="46" id="SO9-2Q-KhX"/>
+                                                        <constraint firstAttribute="height" constant="46" id="pEV-t6-IzO"/>
+                                                    </constraints>
+                                                </imageView>
+                                            </subviews>
+                                            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <userDefinedRuntimeAttributes>
+                                                <userDefinedRuntimeAttribute type="number" keyPath="rtCornerRadius">
+                                                    <real key="value" value="22"/>
+                                                </userDefinedRuntimeAttribute>
+                                                <userDefinedRuntimeAttribute type="color" keyPath="rtBorderColor">
+                                                    <color key="value" name="TextFieldBorder"/>
+                                                </userDefinedRuntimeAttribute>
+                                                <userDefinedRuntimeAttribute type="number" keyPath="rtBorderWidth">
+                                                    <real key="value" value="0.5"/>
+                                                </userDefinedRuntimeAttribute>
+                                            </userDefinedRuntimeAttributes>
+                                        </stackView>
+                                    </subviews>
+                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <constraints>
+                                        <constraint firstAttribute="bottom" secondItem="Y44-ye-A0H" secondAttribute="bottom" id="9FA-AL-3FU"/>
+                                        <constraint firstItem="Y44-ye-A0H" firstAttribute="top" secondItem="l9H-4Z-9QF" secondAttribute="top" id="N9O-1j-vyf"/>
+                                        <constraint firstItem="Y44-ye-A0H" firstAttribute="leading" secondItem="l9H-4Z-9QF" secondAttribute="leading" id="U8a-BD-exV"/>
+                                        <constraint firstAttribute="trailing" secondItem="Y44-ye-A0H" secondAttribute="trailing" id="Wna-w6-8k6"/>
+                                        <constraint firstAttribute="height" constant="46" id="wcR-OP-uXK"/>
+                                    </constraints>
+                                </view>
+                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="MkF-ej-1Bu" userLabel="FilterView">
+                                    <rect key="frame" x="315" y="0.0" width="46" height="46"/>
+                                    <subviews>
+                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MuX-Re-QoU">
+                                            <rect key="frame" x="7" y="7" width="32" height="32"/>
+                                            <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                            <state key="normal" image="filter-mail-circle"/>
+                                            <connections>
+                                                <action selector="didTapFilter:" destination="-1" eventType="touchUpInside" id="DR1-Kw-NY7"/>
+                                            </connections>
+                                        </button>
+                                    </subviews>
+                                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                    <constraints>
+                                        <constraint firstItem="MuX-Re-QoU" firstAttribute="centerX" secondItem="MkF-ej-1Bu" secondAttribute="centerX" id="Fd6-dR-24N"/>
+                                        <constraint firstAttribute="height" constant="46" id="Lqd-uQ-kVr"/>
+                                        <constraint firstItem="MuX-Re-QoU" firstAttribute="centerY" secondItem="MkF-ej-1Bu" secondAttribute="centerY" id="UKv-r0-jVT"/>
+                                        <constraint firstAttribute="width" constant="46" id="csL-cN-8YM"/>
+                                    </constraints>
+                                    <userDefinedRuntimeAttributes>
+                                        <userDefinedRuntimeAttribute type="number" keyPath="rtCornerRadius">
+                                            <real key="value" value="12"/>
+                                        </userDefinedRuntimeAttribute>
+                                        <userDefinedRuntimeAttribute type="color" keyPath="rtBorderColor">
+                                            <color key="value" name="TextFieldBorder"/>
+                                        </userDefinedRuntimeAttribute>
+                                        <userDefinedRuntimeAttribute type="number" keyPath="rtBorderWidth">
+                                            <real key="value" value="0.5"/>
+                                        </userDefinedRuntimeAttribute>
+                                    </userDefinedRuntimeAttributes>
+                                </view>
+                            </subviews>
+                        </stackView>
+                        <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="b7g-vI-Nyl">
+                            <rect key="frame" x="16" y="164" width="361" height="486"/>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="lLZ-Ey-CcY">
+                                <size key="itemSize" width="128" height="128"/>
+                                <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                            </collectionViewFlowLayout>
+                        </collectionView>
+                    </subviews>
+                    <edgeInsets key="layoutMargins" top="16" left="16" bottom="16" right="16"/>
+                </stackView>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="xN8-7H-jNt" firstAttribute="bottom" secondItem="fnl-2z-Ty3" secondAttribute="bottom" id="2Zs-tk-iLD"/>
+                <constraint firstItem="xN8-7H-jNt" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" id="NKa-hn-C4c"/>
+                <constraint firstItem="xN8-7H-jNt" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="Ta0-Sh-Qr7"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="xN8-7H-jNt" secondAttribute="trailing" id="YiD-N5-hdj"/>
+            </constraints>
+            <point key="canvasLocation" x="14.503816793893129" y="126.7605633802817"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="filter-mail-circle" width="32" height="32"/>
+        <image name="search" width="47" height="47"/>
+        <namedColor name="Main">
+            <color red="0.031372549019607843" green="0.4823529411764706" blue="0.36470588235294116" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="TextFieldBorder">
+            <color red="0.94901960784313721" green="0.94901960784313721" blue="0.94901960784313721" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

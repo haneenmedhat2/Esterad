@@ -1,0 +1,14 @@
+/* 
+  InfoPlist.strings
+
+ Created by MGAbouarab®
+  
+*/
+
+"CFBundleDisplayName" = "Esterad";
+"NSCameraUsageDescription" = "Esterad needs access to your camera so you can take a photo of your order and attach it to your request.";
+"NSLocationAlwaysAndWhenInUseUsageDescription" = "Esterad uses your location to show the nearest estates and stores around you and to provide accurate delivery details for your orders.";
+"NSLocationAlwaysUsageDescription" = "Esterad uses your location to show the nearest estates and stores around you and to provide accurate delivery details for your orders.";
+"NSLocationWhenInUseUsageDescription" = "Esterad uses your location to show the nearest estates and stores around you and to provide accurate delivery details for your orders.";
+"NSPhotoLibraryUsageDescription" = "Esterad needs access to your photo library so you can choose a picture of your order and attach it to your request.";
+"NSMicrophoneUsageDescription" = "Esterad needs access to your microphone so you can record and send voice messages in chat.";

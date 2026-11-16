@@ -1,0 +1,30 @@
+{
+  "sourceLanguage" : "en",
+  "strings" : {
+    "1xW-cO-WzS.normalTitle" : {
+      "comment" : "Class = \"UIButton\"; normalTitle = \"Confirm\"; ObjectID = \"1xW-cO-WzS\";",
+      "extractionState" : "extracted_with_value",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "Confirm"
+          }
+        }
+      }
+    },
+    "cbn-bO-CLP.text" : {
+      "comment" : "Class = \"UILabel\"; text = \"Wallet Recharge\"; ObjectID = \"cbn-bO-CLP\";",
+      "extractionState" : "extracted_with_value",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "Wallet Recharge"
+          }
+        }
+      }
+    }
+  },
+  "version" : "1.0"
+}

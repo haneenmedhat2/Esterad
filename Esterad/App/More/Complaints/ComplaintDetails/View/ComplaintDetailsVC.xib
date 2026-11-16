@@ -1,0 +1,281 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="24412" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="24405"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ComplaintDetailsVC" customModule="Esterad" customModuleProvider="target">
+            <connections>
+                <outlet property="adminResponseLabel" destination="zrq-cg-D2b" id="fGZ-Ss-NbF"/>
+                <outlet property="adminResponseView" destination="Cba-XP-gbK" id="bMi-GW-zoC"/>
+                <outlet property="complaintDate" destination="OB8-l9-d60" id="98v-iI-b9K"/>
+                <outlet property="complaintDetailsView" destination="uc5-DX-ery" id="1aB-oF-Q7g"/>
+                <outlet property="complaintNum" destination="xzZ-SW-ljX" id="sBj-9r-yKd"/>
+                <outlet property="complaintReasonLabel" destination="8yG-QH-Vel" id="fbh-Ha-Fe3"/>
+                <outlet property="complaintReasonView" destination="PoP-Ic-Dky" id="LHe-8b-Q4A"/>
+                <outlet property="complaintStatus" destination="BYG-oP-2TZ" id="VP1-6q-0my"/>
+                <outlet property="complaintTitle" destination="Q22-vx-yUP" id="r45-sR-YNW"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="feh-jg-f4h">
+                    <rect key="frame" x="0.0" y="118" width="393" height="666"/>
+                    <subviews>
+                        <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="3dO-oA-qNf" userLabel="ContainerStackView">
+                            <rect key="frame" x="0.0" y="0.0" width="393" height="542"/>
+                            <subviews>
+                                <stackView opaque="NO" contentMode="scaleToFill" spacing="4" translatesAutoresizingMaskIntoConstraints="NO" id="jdy-0Y-bVX" userLabel="ComplaintNumStackView">
+                                    <rect key="frame" x="16" y="16" width="361" height="17"/>
+                                    <subviews>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WzX-4b-AFd">
+                                            <rect key="frame" x="0.0" y="0.0" width="36" height="17"/>
+                                            <fontDescription key="fontDescription" type="system" weight="medium" pointSize="14"/>
+                                            <color key="textColor" name="hintColor"/>
+                                            <nil key="highlightedColor"/>
+                                            <userDefinedRuntimeAttributes>
+                                                <userDefinedRuntimeAttribute type="string" keyPath="xibLocKey" value="complaint_number"/>
+                                            </userDefinedRuntimeAttributes>
+                                        </label>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xzZ-SW-ljX" userLabel="ComplaintNum">
+                                            <rect key="frame" x="40" y="0.0" width="321" height="17"/>
+                                            <fontDescription key="fontDescription" type="system" weight="medium" pointSize="14"/>
+                                            <color key="textColor" name="Main"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                </stackView>
+                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="uc5-DX-ery" userLabel="ComplaintDetailsView">
+                                    <rect key="frame" x="16" y="49" width="361" height="148.33333333333334"/>
+                                    <subviews>
+                                        <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="GFt-nw-JRd" userLabel="TitleStackView">
+                                            <rect key="frame" x="16" y="15.999999999999993" width="329" height="116.33333333333331"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Bud-Fs-uBD" userLabel="HeaderTitle">
+                                                    <rect key="frame" x="0.0" y="0.0" width="329" height="49.333333333333336"/>
+                                                    <fontDescription key="fontDescription" type="system" weight="medium" pointSize="14"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                    <userDefinedRuntimeAttributes>
+                                                        <userDefinedRuntimeAttribute type="string" keyPath="xibLocKey" value="complaint_description"/>
+                                                    </userDefinedRuntimeAttributes>
+                                                </label>
+                                                <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="OdH-SQ-M4j" userLabel="ComplaintTitleStackView">
+                                                    <rect key="frame" x="0.0" y="57.33333333333335" width="329" height="14.333333333333336"/>
+                                                    <subviews>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="r2F-Et-4vM">
+                                                            <rect key="frame" x="0.0" y="0.0" width="297.33333333333331" height="14.333333333333334"/>
+                                                            <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                                            <color key="textColor" name="hintColor"/>
+                                                            <nil key="highlightedColor"/>
+                                                            <userDefinedRuntimeAttributes>
+                                                                <userDefinedRuntimeAttribute type="string" keyPath="xibLocKey" value="complaint_title"/>
+                                                            </userDefinedRuntimeAttributes>
+                                                        </label>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Q22-vx-yUP" userLabel="ComplaintTitle">
+                                                            <rect key="frame" x="297.33333333333331" y="0.0" width="31.666666666666686" height="14.333333333333334"/>
+                                                            <fontDescription key="fontDescription" type="system" weight="medium" pointSize="12"/>
+                                                            <nil key="textColor"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                    </subviews>
+                                                </stackView>
+                                                <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="GJl-Lh-Xhb" userLabel="ComplaintStatusStackView">
+                                                    <rect key="frame" x="0.0" y="79.666666666666686" width="329" height="14.333333333333329"/>
+                                                    <subviews>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ehO-qb-p3q">
+                                                            <rect key="frame" x="0.0" y="0.0" width="297.33333333333331" height="14.333333333333334"/>
+                                                            <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                                            <color key="textColor" name="hintColor"/>
+                                                            <nil key="highlightedColor"/>
+                                                            <userDefinedRuntimeAttributes>
+                                                                <userDefinedRuntimeAttribute type="string" keyPath="xibLocKey" value="status"/>
+                                                            </userDefinedRuntimeAttributes>
+                                                        </label>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BYG-oP-2TZ" userLabel="ComplaintStatus">
+                                                            <rect key="frame" x="297.33333333333331" y="0.0" width="31.666666666666686" height="14.333333333333334"/>
+                                                            <fontDescription key="fontDescription" type="system" weight="medium" pointSize="12"/>
+                                                            <nil key="textColor"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                    </subviews>
+                                                </stackView>
+                                                <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Kbv-84-QYf" userLabel="ComplaintDateStackView">
+                                                    <rect key="frame" x="0.0" y="102" width="329" height="14.333333333333329"/>
+                                                    <subviews>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZVU-bG-b0L">
+                                                            <rect key="frame" x="0.0" y="0.0" width="297.33333333333331" height="14.333333333333334"/>
+                                                            <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                                            <color key="textColor" name="hintColor"/>
+                                                            <nil key="highlightedColor"/>
+                                                            <userDefinedRuntimeAttributes>
+                                                                <userDefinedRuntimeAttribute type="string" keyPath="xibLocKey" value="complaint_date"/>
+                                                            </userDefinedRuntimeAttributes>
+                                                        </label>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OB8-l9-d60" userLabel="ComplaintDate">
+                                                            <rect key="frame" x="297.33333333333331" y="0.0" width="31.666666666666686" height="14.333333333333334"/>
+                                                            <fontDescription key="fontDescription" type="system" weight="medium" pointSize="12"/>
+                                                            <nil key="textColor"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                    </subviews>
+                                                </stackView>
+                                            </subviews>
+                                        </stackView>
+                                    </subviews>
+                                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                    <constraints>
+                                        <constraint firstItem="GFt-nw-JRd" firstAttribute="top" secondItem="uc5-DX-ery" secondAttribute="top" constant="16" id="3a6-MR-htt"/>
+                                        <constraint firstAttribute="bottom" secondItem="GFt-nw-JRd" secondAttribute="bottom" constant="16" id="G7n-GH-80C"/>
+                                        <constraint firstAttribute="trailing" secondItem="GFt-nw-JRd" secondAttribute="trailing" constant="16" id="NRV-3R-nly"/>
+                                        <constraint firstItem="GFt-nw-JRd" firstAttribute="leading" secondItem="uc5-DX-ery" secondAttribute="leading" constant="16" id="zhn-0a-dgQ"/>
+                                    </constraints>
+                                    <userDefinedRuntimeAttributes>
+                                        <userDefinedRuntimeAttribute type="number" keyPath="rtCornerRadius">
+                                            <real key="value" value="16"/>
+                                        </userDefinedRuntimeAttribute>
+                                        <userDefinedRuntimeAttribute type="number" keyPath="rtBorderWidth">
+                                            <real key="value" value="1"/>
+                                        </userDefinedRuntimeAttribute>
+                                        <userDefinedRuntimeAttribute type="color" keyPath="rtBorderColor">
+                                            <color key="value" name="TextFieldBorder"/>
+                                        </userDefinedRuntimeAttribute>
+                                    </userDefinedRuntimeAttributes>
+                                </view>
+                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="PoP-Ic-Dky" userLabel="ComplaintReasonView">
+                                    <rect key="frame" x="16" y="213.33333333333331" width="361" height="148.33333333333331"/>
+                                    <subviews>
+                                        <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="p4Z-2X-B28" userLabel="TitleStackView">
+                                            <rect key="frame" x="16" y="15.999999999999993" width="329" height="116.33333333333331"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ODw-5C-qgN" userLabel="HeaderTitle">
+                                                    <rect key="frame" x="0.0" y="0.0" width="329" height="94"/>
+                                                    <fontDescription key="fontDescription" type="system" weight="medium" pointSize="14"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                    <userDefinedRuntimeAttributes>
+                                                        <userDefinedRuntimeAttribute type="string" keyPath="xibLocKey" value="complaint_reason"/>
+                                                    </userDefinedRuntimeAttributes>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8yG-QH-Vel" userLabel="ComplaintReasonLabel">
+                                                    <rect key="frame" x="0.0" y="102" width="329" height="14.333333333333329"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                        </stackView>
+                                    </subviews>
+                                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                    <constraints>
+                                        <constraint firstAttribute="bottom" secondItem="p4Z-2X-B28" secondAttribute="bottom" constant="16" id="EJt-RP-Vg0"/>
+                                        <constraint firstItem="p4Z-2X-B28" firstAttribute="leading" secondItem="PoP-Ic-Dky" secondAttribute="leading" constant="16" id="GHg-Gq-Rsm"/>
+                                        <constraint firstAttribute="trailing" secondItem="p4Z-2X-B28" secondAttribute="trailing" constant="16" id="SzY-gn-GEP"/>
+                                        <constraint firstItem="p4Z-2X-B28" firstAttribute="top" secondItem="PoP-Ic-Dky" secondAttribute="top" constant="16" id="ry2-Me-Bse"/>
+                                    </constraints>
+                                    <userDefinedRuntimeAttributes>
+                                        <userDefinedRuntimeAttribute type="number" keyPath="rtCornerRadius">
+                                            <real key="value" value="16"/>
+                                        </userDefinedRuntimeAttribute>
+                                        <userDefinedRuntimeAttribute type="color" keyPath="rtBorderColor">
+                                            <color key="value" name="TextFieldBorder"/>
+                                        </userDefinedRuntimeAttribute>
+                                        <userDefinedRuntimeAttribute type="number" keyPath="rtBorderWidth">
+                                            <real key="value" value="1"/>
+                                        </userDefinedRuntimeAttribute>
+                                    </userDefinedRuntimeAttributes>
+                                </view>
+                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Cba-XP-gbK" userLabel="AdminResponseView">
+                                    <rect key="frame" x="16" y="377.66666666666669" width="361" height="148.33333333333331"/>
+                                    <subviews>
+                                        <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="IuK-M0-Cs5" userLabel="TitleStackView">
+                                            <rect key="frame" x="16" y="15.999999999999993" width="329" height="116.33333333333331"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZwT-av-ynD" userLabel="HeaderTitle">
+                                                    <rect key="frame" x="0.0" y="0.0" width="329" height="94"/>
+                                                    <fontDescription key="fontDescription" type="system" weight="medium" pointSize="14"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                    <userDefinedRuntimeAttributes>
+                                                        <userDefinedRuntimeAttribute type="string" keyPath="xibLocKey" value="admin_reply"/>
+                                                    </userDefinedRuntimeAttributes>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zrq-cg-D2b" userLabel="AdminResponseLabel">
+                                                    <rect key="frame" x="0.0" y="101.99999999999994" width="329" height="14.333333333333329"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                        </stackView>
+                                    </subviews>
+                                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                    <constraints>
+                                        <constraint firstItem="IuK-M0-Cs5" firstAttribute="leading" secondItem="Cba-XP-gbK" secondAttribute="leading" constant="16" id="30u-zt-uVK"/>
+                                        <constraint firstAttribute="trailing" secondItem="IuK-M0-Cs5" secondAttribute="trailing" constant="16" id="JVc-Sf-Xrc"/>
+                                        <constraint firstItem="IuK-M0-Cs5" firstAttribute="top" secondItem="Cba-XP-gbK" secondAttribute="top" constant="16" id="irZ-Mt-Wgg"/>
+                                        <constraint firstAttribute="bottom" secondItem="IuK-M0-Cs5" secondAttribute="bottom" constant="16" id="lHO-iO-tP4"/>
+                                    </constraints>
+                                    <userDefinedRuntimeAttributes>
+                                        <userDefinedRuntimeAttribute type="number" keyPath="rtCornerRadius">
+                                            <real key="value" value="16"/>
+                                        </userDefinedRuntimeAttribute>
+                                        <userDefinedRuntimeAttribute type="color" keyPath="rtBorderColor">
+                                            <color key="value" name="TextFieldBorder"/>
+                                        </userDefinedRuntimeAttribute>
+                                        <userDefinedRuntimeAttribute type="number" keyPath="rtBorderWidth">
+                                            <real key="value" value="1"/>
+                                        </userDefinedRuntimeAttribute>
+                                    </userDefinedRuntimeAttributes>
+                                </view>
+                            </subviews>
+                            <edgeInsets key="layoutMargins" top="16" left="16" bottom="16" right="16"/>
+                        </stackView>
+                    </subviews>
+                    <constraints>
+                        <constraint firstItem="3dO-oA-qNf" firstAttribute="bottom" secondItem="5vg-Nf-zgh" secondAttribute="bottom" id="9Js-M4-XmW"/>
+                        <constraint firstItem="3dO-oA-qNf" firstAttribute="leading" secondItem="5vg-Nf-zgh" secondAttribute="leading" id="A9P-df-luF"/>
+                        <constraint firstItem="3dO-oA-qNf" firstAttribute="top" secondItem="5vg-Nf-zgh" secondAttribute="top" id="EMT-2g-yZ1"/>
+                        <constraint firstItem="3dO-oA-qNf" firstAttribute="height" secondItem="o6F-1f-6L1" secondAttribute="height" priority="250" id="OiW-zB-GGR"/>
+                        <constraint firstItem="3dO-oA-qNf" firstAttribute="trailing" secondItem="5vg-Nf-zgh" secondAttribute="trailing" id="aUK-Mx-ozv"/>
+                        <constraint firstItem="3dO-oA-qNf" firstAttribute="width" secondItem="o6F-1f-6L1" secondAttribute="width" id="fpk-kc-8LX"/>
+                    </constraints>
+                    <viewLayoutGuide key="contentLayoutGuide" id="5vg-Nf-zgh"/>
+                    <viewLayoutGuide key="frameLayoutGuide" id="o6F-1f-6L1"/>
+                </scrollView>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="feh-jg-f4h" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" id="RnG-Me-y1G"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="feh-jg-f4h" secondAttribute="trailing" id="TMc-R7-ygU"/>
+                <constraint firstItem="feh-jg-f4h" firstAttribute="bottom" secondItem="fnl-2z-Ty3" secondAttribute="bottom" id="Tny-uC-mh3"/>
+                <constraint firstItem="feh-jg-f4h" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="sBh-9E-bPx"/>
+            </constraints>
+            <point key="canvasLocation" x="-141.22137404580153" y="126.7605633802817"/>
+        </view>
+    </objects>
+    <resources>
+        <namedColor name="Main">
+            <color red="0.031372549019607843" green="0.4823529411764706" blue="0.36470588235294116" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="TextFieldBorder">
+            <color red="0.94901960784313721" green="0.94901960784313721" blue="0.94901960784313721" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="hintColor">
+            <color red="0.54117647058823526" green="0.54117647058823526" blue="0.54117647058823526" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

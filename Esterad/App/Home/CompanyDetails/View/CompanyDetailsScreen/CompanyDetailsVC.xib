@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="24412" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="24405"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="CompanyDetailsVC" customModule="Esterad" customModuleProvider="target">
+            <connections>
+                <outlet property="collectionView" destination="EPU-xd-nlU" id="zOo-Vn-nms"/>
+                <outlet property="createCustomRequestBtn" destination="cKE-6a-uqX" id="kn2-Ca-RuR"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="hgc-jd-lEa" userLabel="ContainerStackView">
+                    <rect key="frame" x="0.0" y="118" width="393" height="640"/>
+                    <subviews>
+                        <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="EPU-xd-nlU">
+                            <rect key="frame" x="16" y="16" width="361" height="608"/>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="Nfw-HR-XYo">
+                                <size key="itemSize" width="128" height="128"/>
+                                <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                            </collectionViewFlowLayout>
+                        </collectionView>
+                    </subviews>
+                    <edgeInsets key="layoutMargins" top="16" left="16" bottom="16" right="16"/>
+                </stackView>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hhx-mq-yEw" userLabel="ButtonView">
+                    <rect key="frame" x="0.0" y="758" width="393" height="94"/>
+                    <subviews>
+                        <view contentMode="scaleToFill" placeholderIntrinsicWidth="345" placeholderIntrinsicHeight="128" translatesAutoresizingMaskIntoConstraints="NO" id="cKE-6a-uqX" userLabel="createCustomRequestBtn" customClass="IconTextGeneralButton" customModule="Esterad" customModuleProvider="target">
+                            <rect key="frame" x="16" y="24" width="361" height="46"/>
+                            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="46" id="5AN-YP-ymi"/>
+                            </constraints>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="image" keyPath="iconImageName" value="plus-sign"/>
+                                <userDefinedRuntimeAttribute type="string" keyPath="buttonLabelText" value="create_custom_request"/>
+                                <userDefinedRuntimeAttribute type="color" keyPath="btnBackgroundColor">
+                                    <color key="value" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </userDefinedRuntimeAttribute>
+                                <userDefinedRuntimeAttribute type="color" keyPath="btnBorderColor">
+                                    <color key="value" name="Main"/>
+                                </userDefinedRuntimeAttribute>
+                                <userDefinedRuntimeAttribute type="color" keyPath="fontColor">
+                                    <color key="value" name="Main"/>
+                                </userDefinedRuntimeAttribute>
+                            </userDefinedRuntimeAttributes>
+                        </view>
+                    </subviews>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    <constraints>
+                        <constraint firstAttribute="bottom" secondItem="cKE-6a-uqX" secondAttribute="bottom" constant="24" id="2Qt-4X-17a"/>
+                        <constraint firstItem="cKE-6a-uqX" firstAttribute="top" secondItem="hhx-mq-yEw" secondAttribute="top" constant="24" id="9n5-Sg-dKg"/>
+                        <constraint firstAttribute="trailing" secondItem="cKE-6a-uqX" secondAttribute="trailing" constant="16" id="ZYi-Cd-PcZ"/>
+                        <constraint firstItem="cKE-6a-uqX" firstAttribute="leading" secondItem="hhx-mq-yEw" secondAttribute="leading" constant="16" id="fpM-Ju-XwV"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="hhx-mq-yEw" firstAttribute="trailing" secondItem="fnl-2z-Ty3" secondAttribute="trailing" id="6Hw-ee-J6b"/>
+                <constraint firstItem="hgc-jd-lEa" firstAttribute="bottom" secondItem="hhx-mq-yEw" secondAttribute="top" id="DKE-x6-DAb"/>
+                <constraint firstItem="hgc-jd-lEa" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="JXL-HH-lLJ"/>
+                <constraint firstItem="hgc-jd-lEa" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" id="S6M-QV-Ro6"/>
+                <constraint firstAttribute="bottom" secondItem="hhx-mq-yEw" secondAttribute="bottom" id="lNu-UH-KVl"/>
+                <constraint firstItem="hgc-jd-lEa" firstAttribute="trailing" secondItem="fnl-2z-Ty3" secondAttribute="trailing" id="p7M-YD-grH"/>
+                <constraint firstItem="hhx-mq-yEw" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="y2c-sO-dMe"/>
+            </constraints>
+            <point key="canvasLocation" x="139.69465648854961" y="126.7605633802817"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="plus-sign" width="24" height="24"/>
+        <namedColor name="Main">
+            <color red="0.031372549019607843" green="0.4823529411764706" blue="0.36470588235294116" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

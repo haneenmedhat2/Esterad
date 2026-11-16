@@ -1,0 +1,247 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="24412" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="24405"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="CompanyDetailsCollectionCell" customModule="Esterad" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="405" height="541"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="405" height="541"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="GnU-9h-FdU" userLabel="ContsinerStackView">
+                        <rect key="frame" x="0.0" y="0.0" width="405" height="541"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" placeholderIntrinsicWidth="606" placeholderIntrinsicHeight="144.33333333333334" axis="vertical" alignment="center" spacing="4" translatesAutoresizingMaskIntoConstraints="NO" id="qnR-F2-6ey" userLabel="HeaderStackView">
+                                <rect key="frame" x="0.0" y="0.0" width="405" height="150"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="companyDetails" translatesAutoresizingMaskIntoConstraints="NO" id="XcZ-M0-11q">
+                                        <rect key="frame" x="157.66666666666666" y="0.0" width="90" height="90"/>
+                                        <color key="backgroundColor" name="TextFieldBackground"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="90" id="Kp0-vb-KxC"/>
+                                            <constraint firstAttribute="height" constant="90" id="Zu9-Oy-at2"/>
+                                        </constraints>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="rtCornerRadius">
+                                                <real key="value" value="45"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="rtBorderWidth">
+                                                <real key="value" value="0.5"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="rtBorderColor">
+                                                <color key="value" name="TextFieldBorder"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                    </imageView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IDp-Yd-3rh" userLabel="companyName">
+                                        <rect key="frame" x="16" y="94" width="373" height="0.0"/>
+                                        <fontDescription key="fontDescription" type="system" weight="medium" pointSize="16"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="4" translatesAutoresizingMaskIntoConstraints="NO" id="ec9-3o-Ich" userLabel="LocationStackView">
+                                        <rect key="frame" x="176.66666666666666" y="98" width="52" height="52"/>
+                                        <subviews>
+                                            <stackView opaque="NO" contentMode="scaleToFill" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="I4R-uR-Kfd">
+                                                <rect key="frame" x="16" y="28" width="16" height="16"/>
+                                                <subviews>
+                                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="location-06" translatesAutoresizingMaskIntoConstraints="NO" id="0cA-9T-rvu">
+                                                        <rect key="frame" x="0.0" y="0.0" width="16" height="16"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="width" constant="16" id="WCi-7C-Yuj"/>
+                                                            <constraint firstAttribute="height" constant="16" id="x5M-oG-YGm"/>
+                                                        </constraints>
+                                                    </imageView>
+                                                </subviews>
+                                            </stackView>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eaN-gT-ZZx" userLabel="companyLocation">
+                                                <rect key="frame" x="36" y="28" width="0.0" height="16"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                                <color key="textColor" name="hintColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                        <edgeInsets key="layoutMargins" top="8" left="16" bottom="8" right="16"/>
+                                    </stackView>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="IDp-Yd-3rh" firstAttribute="leading" secondItem="qnR-F2-6ey" secondAttribute="leading" constant="16" id="ERe-JA-Pwc"/>
+                                    <constraint firstAttribute="trailing" secondItem="IDp-Yd-3rh" secondAttribute="trailing" constant="16" id="Mho-aG-dms"/>
+                                </constraints>
+                            </stackView>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="2Hb-j4-0st">
+                                <rect key="frame" x="0.0" y="166" width="405" height="154.66666666666663"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="90" id="kfb-sa-30P"/>
+                                </constraints>
+                                <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="Kad-wn-h2B">
+                                    <size key="itemSize" width="128" height="128"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                </collectionViewFlowLayout>
+                            </collectionView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="HVc-k8-RPi">
+                                <rect key="frame" x="0.0" y="336.66666666666669" width="405" height="142.33333333333331"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="G7M-gc-PYv">
+                                        <rect key="frame" x="0.0" y="0.0" width="405" height="50"/>
+                                        <fontDescription key="fontDescription" type="system" weight="medium" pointSize="16"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="string" keyPath="xibLocKey" value="about_company"/>
+                                        </userDefinedRuntimeAttributes>
+                                    </label>
+                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" placeholderIntrinsicWidth="606" placeholderIntrinsicHeight="92.333333333333343" scrollEnabled="NO" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" editable="NO" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="eyo-d1-0Xg" userLabel="companyDescTextview">
+                                        <rect key="frame" x="0.0" y="49.999999999999993" width="405" height="92.333333333333314"/>
+                                        <color key="textColor" systemColor="labelColor"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                    </textView>
+                                </subviews>
+                            </stackView>
+                            <stackView opaque="NO" contentMode="scaleToFill" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="nJy-LZ-J0d" userLabel="FilterSearchStackView">
+                                <rect key="frame" x="0.0" y="495" width="405" height="46"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="aBl-3R-FO4" userLabel="SearchView">
+                                        <rect key="frame" x="0.0" y="0.0" width="351" height="46"/>
+                                        <subviews>
+                                            <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="di1-V8-ESW" userLabel="SearchStackView">
+                                                <rect key="frame" x="0.0" y="0.0" width="351" height="46"/>
+                                                <subviews>
+                                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="zVP-bz-iWl">
+                                                        <rect key="frame" x="0.0" y="0.0" width="305" height="46"/>
+                                                        <subviews>
+                                                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" enabled="NO" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="hrK-xo-7ej">
+                                                                <rect key="frame" x="8" y="8" width="289" height="30"/>
+                                                                <color key="tintColor" name="Main"/>
+                                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                                <textInputTraits key="textInputTraits"/>
+                                                                <userDefinedRuntimeAttributes>
+                                                                    <userDefinedRuntimeAttribute type="string" keyPath="xibPlaceholderLocKey" value="search_by_product_name"/>
+                                                                </userDefinedRuntimeAttributes>
+                                                            </textField>
+                                                        </subviews>
+                                                        <edgeInsets key="layoutMargins" top="8" left="8" bottom="8" right="8"/>
+                                                    </stackView>
+                                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="search" translatesAutoresizingMaskIntoConstraints="NO" id="xw1-XP-yZ6">
+                                                        <rect key="frame" x="305" y="0.0" width="46" height="46"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" constant="46" id="T3f-Se-sAz"/>
+                                                            <constraint firstAttribute="width" constant="46" id="ohB-tw-9XB"/>
+                                                        </constraints>
+                                                    </imageView>
+                                                </subviews>
+                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="rtCornerRadius">
+                                                        <real key="value" value="22"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="color" keyPath="rtBorderColor">
+                                                        <color key="value" name="TextFieldBorder"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="rtBorderWidth">
+                                                        <real key="value" value="0.5"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                            </stackView>
+                                        </subviews>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstItem="di1-V8-ESW" firstAttribute="leading" secondItem="aBl-3R-FO4" secondAttribute="leading" id="08y-JA-aoW"/>
+                                            <constraint firstAttribute="trailing" secondItem="di1-V8-ESW" secondAttribute="trailing" id="2dJ-we-wvm"/>
+                                            <constraint firstItem="di1-V8-ESW" firstAttribute="top" secondItem="aBl-3R-FO4" secondAttribute="top" id="AEa-Gu-ruw"/>
+                                            <constraint firstAttribute="height" constant="46" id="acs-sk-5D0"/>
+                                            <constraint firstAttribute="bottom" secondItem="di1-V8-ESW" secondAttribute="bottom" id="ilB-51-krQ"/>
+                                        </constraints>
+                                    </view>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="tXr-yI-kxe" userLabel="FilterView">
+                                        <rect key="frame" x="359" y="0.0" width="46" height="46"/>
+                                        <subviews>
+                                            <button opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="c6a-F6-DEE">
+                                                <rect key="frame" x="7" y="7" width="32" height="32"/>
+                                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                                <state key="normal" image="filter-mail-circle"/>
+                                            </button>
+                                        </subviews>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                        <constraints>
+                                            <constraint firstItem="c6a-F6-DEE" firstAttribute="centerX" secondItem="tXr-yI-kxe" secondAttribute="centerX" id="SwI-ea-cRN"/>
+                                            <constraint firstItem="c6a-F6-DEE" firstAttribute="centerY" secondItem="tXr-yI-kxe" secondAttribute="centerY" id="cup-BW-l4h"/>
+                                            <constraint firstAttribute="width" constant="46" id="dkn-7h-FTW"/>
+                                            <constraint firstAttribute="height" constant="46" id="wUo-h9-W7L"/>
+                                        </constraints>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="rtCornerRadius">
+                                                <real key="value" value="12"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="rtBorderColor">
+                                                <color key="value" name="TextFieldBorder"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="rtBorderWidth">
+                                                <real key="value" value="0.5"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                    </view>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                    </stackView>
+                </subviews>
+            </view>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <constraints>
+                <constraint firstItem="GnU-9h-FdU" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="WPr-I8-qdf"/>
+                <constraint firstAttribute="bottom" secondItem="GnU-9h-FdU" secondAttribute="bottom" id="X7L-Xp-9RA"/>
+                <constraint firstItem="GnU-9h-FdU" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="Xrb-zZ-THk"/>
+                <constraint firstAttribute="trailing" secondItem="GnU-9h-FdU" secondAttribute="trailing" id="hK7-xB-TaU"/>
+            </constraints>
+            <size key="customSize" width="405" height="541"/>
+            <connections>
+                <outlet property="collectionView" destination="2Hb-j4-0st" id="OLC-JI-XiN"/>
+                <outlet property="companyDescTextview" destination="eyo-d1-0Xg" id="efO-vs-d4b"/>
+                <outlet property="companyImage" destination="XcZ-M0-11q" id="n9U-Ps-I2q"/>
+                <outlet property="companyLocation" destination="eaN-gT-ZZx" id="JAR-Nb-YW5"/>
+                <outlet property="companyName" destination="IDp-Yd-3rh" id="y3g-1j-H30"/>
+                <outlet property="filterSearchStackView" destination="nJy-LZ-J0d" id="emv-2b-1Dg"/>
+            </connections>
+            <point key="canvasLocation" x="248.09160305343511" y="280.63380281690144"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="companyDetails" width="90" height="90"/>
+        <image name="filter-mail-circle" width="32" height="32"/>
+        <image name="location-06" width="16" height="16"/>
+        <image name="search" width="47" height="47"/>
+        <namedColor name="Main">
+            <color red="0.031372549019607843" green="0.4823529411764706" blue="0.36470588235294116" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="TextFieldBackground">
+            <color red="0.98039215686274506" green="0.98039215686274506" blue="0.98039215686274506" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="TextFieldBorder">
+            <color red="0.94901960784313721" green="0.94901960784313721" blue="0.94901960784313721" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="hintColor">
+            <color red="0.54117647058823526" green="0.54117647058823526" blue="0.54117647058823526" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <systemColor name="labelColor">
+            <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
