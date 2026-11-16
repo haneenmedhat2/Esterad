@@ -34,7 +34,7 @@ Some app services may require Firebase configuration, credentials, or access pro
 
 ### Home
 
-![Esterad home screen](Screenshots/home.png)
+<img src="Screenshots/home.png" alt="Esterad home screen" width="280">
 
 ### Categories and listings
 
@@ -50,7 +50,7 @@ Some app services may require Firebase configuration, credentials, or access pro
 
 ### Profile
 
-![More and profile screen](Screenshots/profile.png)
+<img src="Screenshots/profile.png" alt="More and profile screen" width="280">
 
 ## Project Structure
 
